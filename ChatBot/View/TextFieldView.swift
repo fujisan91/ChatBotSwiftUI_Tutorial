@@ -13,7 +13,7 @@ struct TextFieldView: View {
     @EnvironmentObject var messageDataList :MessageDataList
     var body: some View {
         HStack{
-            TextField("文字を入力", text: $text)
+            TextField("", text: $text)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .keyboardType(.default)
             
